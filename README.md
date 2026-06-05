@@ -31,102 +31,26 @@ Designed and implemented an end-to-end data engineering platform that:
 
 ---
 
+
 ## 🏗️ Architecture Overview
 
-### Databricks Lakehouse Architecture (Medallion Pattern)
+The solution leverages a Databricks Lakehouse Architecture with the Medallion Design Pattern to integrate Sports Bar data into Atlikon's enterprise analytics platform.
 
-#### 🥉 Bronze Layer – Raw Data
+### Key Components
 
-* Ingests raw source data from Amazon S3
-* Preserves source data without transformation
-* Maintains auditability and historical traceability
-* Supports both historical and incremental data ingestion
+* **Amazon S3** serves as the landing zone for raw source files and archive storage.
+* **Databricks Lakeflow Jobs** orchestrate automated ingestion and transformation workflows.
+* **Bronze Layer** stores raw ingested data for auditability and traceability.
+* **Silver Layer** applies data cleansing, validation, standardization, and business rules.
+* **Gold Layer** provides curated, business-ready datasets for analytics and reporting.
+* **Unity Catalog** enables centralized governance, security, and data lineage management.
+* Child company gold datasets are integrated into **parent company analytics tables** for unified reporting.
+* **Databricks Dashboards** and **Genie** provide business intelligence and AI-powered data exploration.
 
-#### 🥈 Silver Layer – Cleansed Data
+### Processing Strategy
 
-* Schema standardization and validation
-* Data quality checks and business rule enforcement
-* Deduplication and data cleansing
-* Transformation of raw records into trusted datasets
-
-#### 🥇 Gold Layer – Business-Ready Data
-
-* Aggregated and curated datasets
-* Reporting and dashboard consumption
-* KPI and business metric generation
-* AI-powered data exploration through Databricks Genie
-
----
-
-## 🔄 Data Ingestion & Processing Framework
-
-### Data Flow
-
-```text
-Sports Bar OLTP System
-          │
-          ▼
- Amazon S3 Landing Zone
-          │
-          ▼
- PySpark Processing (Databricks)
-          │
-          ▼
- Amazon S3 Processed Zone
-          │
-          ▼
- Dashboards & AI Analytics
-```
-
-### ☁️ Amazon S3 Landing Zone
-
-The Landing Zone serves as the initial storage layer for incoming Sports Bar source files.
-
-**Key Features**
-
-* Raw source-of-record storage
-* No transformations applied
-* Supports historical and incremental loads
-* Ensures auditability and data lineage
-
-### ⚡ PySpark Data Processing
-
-Databricks notebooks process incoming files using PySpark to:
-
-* Validate source data
-* Perform schema alignment
-* Apply data cleansing and standardization
-* Enforce business rules
-* Remove duplicate records
-* Generate curated datasets
-
-### 📂 Amazon S3 Processed Zone
-
-After successful processing:
-
-* Cleaned datasets are stored in the Processed folder
-* Data becomes available for Bronze layer ingestion
-* Supports traceability, recovery, and reprocessing scenarios
-
----
-
-## 📂 Data Loading Strategy
-
-### Historical Backfill (July – November)
-
-* One-time batch ingestion of legacy Sports Bar data
-* Schema alignment with Atlikon standards
-* Migration of historical records into the Lakehouse
-* Initial population of Bronze, Silver, and Gold layers
-
-### Incremental Processing (December Onwards)
-
-* Daily automated ingestion of new and updated records
-* Incremental data loading to reduce processing overhead
-* Near real-time data availability for analytics
-* Automated propagation through Bronze, Silver, and Gold layers
-
----
+* **Historical Backfill (July–November):** One-time batch migration of legacy Sports Bar data.
+* **Incremental Loads (December onwards):** Automated daily processing of new and updated records through Databricks workflows.
 
 ## ⚙️ Workflow Orchestration
 
