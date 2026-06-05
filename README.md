@@ -1,4 +1,4 @@
-#  Atlikon – Sports Bar Data Integration & Lakehouse Modernization
+#  # 🚀 Atlikon–Sports Bar Post-Acquisition Data Integration & Analytics Modernization
 
 ## 📌 Project Overview
 
