@@ -1,4 +1,4 @@
-#  # 🚀 Atlikon–Sports Bar Post-Acquisition Data Integration & Analytics Modernization
+#  Atlikon–Sports Bar Data Engineering Pipeline for Unified Analytics
 
 ## 📌 Project Overview
 
