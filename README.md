@@ -1,4 +1,4 @@
-#  Atlikon–Sports Bar Data Engineering Pipeline for Unified Analytics
+# Atlikon–Sports Bar Enterprise Data Engineering & Analytics Modernization Platform
 
 ## 📌 Project Overview
 
