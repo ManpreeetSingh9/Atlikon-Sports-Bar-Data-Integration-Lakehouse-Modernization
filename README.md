@@ -36,6 +36,7 @@ Designed and implemented an end-to-end data engineering platform that:
 
 The solution leverages a Databricks Lakehouse Architecture with the Medallion Design Pattern to integrate Sports Bar data into Atlikon's enterprise analytics platform.
 
+![image alt](https://github.com/ManpreeetSingh9/atlikon-sports-bar-data-integration-pipeline-and-analytics/blob/56ad12b8d563273fceeee572a1e8a841e63b588b/3_resources/architecture.png)
 ### Key Components
 
 * **Amazon S3** serves as the landing zone for raw source files and archive storage.
@@ -53,7 +54,7 @@ The solution leverages a Databricks Lakehouse Architecture with the Medallion De
 * **Incremental Loads (December onwards):** Automated daily processing of new and updated records through Databricks workflows.
 
 ## ⚙️ Workflow Orchestration
-
+![image alt](https://github.com/ManpreeetSingh9/atlikon-sports-bar-data-integration-pipeline-and-analytics/blob/56ad12b8d563273fceeee572a1e8a841e63b588b/3_resources/orchestration.png)
 Databricks Workflows and Jobs automate the end-to-end pipeline by:
 
 * Scheduling data ingestion from Amazon S3
@@ -62,7 +63,6 @@ Databricks Workflows and Jobs automate the end-to-end pipeline by:
 * Monitoring job execution and failures
 * Automating data movement across Medallion layers
 * Ensuring reliable and scalable pipeline execution
-
 ---
 
 ## 🛠️ Technology Stack
@@ -79,7 +79,11 @@ Databricks Workflows and Jobs automate the end-to-end pipeline by:
 | Databricks Genie       | AI-Powered Data Exploration                          |
 
 ---
+## 📈 Repository Directory Structure
 
+![image alt](https://github.com/ManpreeetSingh9/atlikon-sports-bar-data-integration-pipeline-and-analytics/blob/56ad12b8d563273fceeee572a1e8a841e63b588b/3_resources/repository.png)
+
+---
 ## 📈 Key Outcomes
 
 * Unified reporting across Atlikon and Sports Bar
