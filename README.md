@@ -2,32 +2,40 @@
 
 ## 📌 Project Overview
 
-Following the acquisition of Sports Bar, a rapidly growing sports nutrition and energy bar company, Atlikon faced significant challenges in integrating data across both organizations. While Atlikon operated on a structured, enterprise-wide analytics platform, Sports Bar relied on spreadsheets, shared drives, and disconnected reporting processes.
+Atlikon's acquisition of Sports Bar introduced significant data integration challenges due to fragmented data sources, inconsistent reporting standards, and disconnected analytics processes.
 
-This project modernized Sports Bar's data ecosystem by implementing a scalable Databricks Lakehouse architecture using the Medallion Design Pattern. The solution enabled centralized governance, standardized reporting, and unified analytics across both parent and subsidiary organizations.
+This project implements a Databricks-based data engineering platform that consolidates, transforms, and governs enterprise data using the Medallion Architecture. The solution delivers automated data pipelines, unified reporting, and scalable analytics across both organizations.
 
 ---
 
 ## 🎯 Business Challenges
 
-* Inconsistent sales and revenue metrics across organizations
-* Different reporting cycles and business definitions
-* Data scattered across spreadsheets and shared drives
-* Lack of centralized data governance and quality controls
-* Limited scalability for future analytics and reporting needs
+▸ Inconsistent sales and revenue metrics across organizations
 
+▸ Different reporting cycles and business definitions
+
+▸ Data scattered across spreadsheets and shared drives
+
+▸ Lack of centralized data governance and quality controls
+
+▸ Limited scalability for future analytics and reporting needs
 ---
 
 ## ✅ Solution
 
 Designed and implemented an end-to-end data engineering platform that:
 
-* Standardized Sports Bar data into enterprise-ready formats
-* Aligned business metrics with Atlikon's reporting standards
-* Supported both historical and incremental data processing
-* Enabled consolidated analytics across parent and child companies
-* Delivered BI-ready datasets for reporting and AI-driven insights
-* Established a scalable Lakehouse architecture for future growth
+✔ Standardized Sports Bar data into enterprise-ready formats
+
+✔ Aligned business metrics with Atlikon's reporting standards
+
+✔ Supported both historical and incremental data processing
+
+✔ Enabled consolidated analytics across parent and child companies
+
+✔ Delivered BI-ready datasets for reporting and AI-driven insights
+
+✔ Established a scalable Databricks-based architecture for future growth
 
 ---
 
@@ -67,16 +75,19 @@ Databricks Workflows and Jobs automate the end-to-end pipeline by:
 
 ## 🛠️ Technology Stack
 
-| Technology             | Purpose                                              |
-| ---------------------- | ---------------------------------------------------- |
-| Databricks             | Data Engineering, Workflow Orchestration & Analytics |
-| Apache Spark (PySpark) | Distributed Data Processing                          |
-| Python                 | ETL Development                                      |
-| SQL                    | Data Transformation & Analytics                      |
-| Amazon S3              | Landing Zone & Data Storage                          |
-| Medallion Architecture | Data Organization Framework                          |
-| Databricks Dashboards  | Business Intelligence Reporting                      |
-| Databricks Genie       | AI-Powered Data Exploration                          |
+## 🛠️ Technology Stack
+
+| Category | Technology |
+|----------|------------|
+| ⚙️ Data Engineering | Databricks |
+| ⚙️ Data Processing | Apache Spark (PySpark) |
+| ⚙️ Programming | Python |
+| ⚙️ Querying | SQL |
+| ☁️ Cloud Storage | Amazon S3 |
+| 🔄 Orchestration | Databricks Workflows |
+| 🏗️ Architecture | Medallion Architecture |
+| 🔐 Governance | Unity Catalog |
+| 📊 Visualization | Databricks Dashboards |
 
 ---
 ## 📈 Repository Directory Structure
